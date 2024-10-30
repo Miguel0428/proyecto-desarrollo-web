@@ -9,32 +9,32 @@ export default function News() {
       id: 1,
       title: "Ceremonia de Graduación 2024",
       date: "2024-03-15",
-      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://media.master2000.net/fotos/300//25836EXPO%208.jpg",
       content: "Celebramos el éxito de nuestra última generación de graduados..."
     },
     {
       id: 2,
       title: "Feria de Ciencias Anual",
       date: "2024-03-20",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://media.master2000.net/fotos/300//208035.jpg",
       content: "Los estudiantes presentaron proyectos innovadores en diversas áreas..."
     },
     {
       id: 3,
       title: "Competencia Deportiva Interescolar",
       date: "2024-03-25",
-      image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      image: "https://media.master2000.net/fotos/300//22643TORNEO%2017.jpg",
       content: "Nuestros equipos deportivos destacaron en múltiples disciplinas..."
     }
   ];
 
   const gallery = [
-    "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1527269534026-c86f4009eace?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    "https://media.master2000.net/fotos/300//5909510%c2%ba1.jpg",
+    "https://media.master2000.net/fotos/300//5909610%c2%ba2.jpg",
+    "https://media.master2000.net/fotos/300//5909711%c2%ba1.jpg",
+    "https://media.master2000.net/fotos/300//5909811%c2%ba2.jpg",
+    "https://media.master2000.net/fotos/300//590866%c2%ba1.jpg",
+    "https://media.master2000.net/fotos/300//590876%c2%ba2.jpg"
   ];
 
   return (
@@ -61,7 +61,6 @@ export default function News() {
         ))}
       </div>
 
-      {/* Gallery Section */}
       <div className="mb-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
           <ImageIcon className="h-6 w-6 mr-2" />
@@ -84,7 +83,6 @@ export default function News() {
         </div>
       </div>
 
-      {/* Image Modal */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"

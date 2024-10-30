@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           Bienvenidos a Nuestra Institución
@@ -14,23 +13,22 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         {[
           {
             title: "Excelencia Académica",
             description: "Programas educativos de alta calidad con profesores expertos",
-            image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image: "https://media.master2000.net/fotos/300//209459%202.JPG"
           },
           {
             title: "Instalaciones Modernas",
             description: "Espacios diseñados para optimizar el aprendizaje",
-            image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image: "https://media.master2000.net/fotos/300//18301Visita%20autor%20serenata.jpg"
           },
           {
             title: "Desarrollo Integral",
             description: "Actividades deportivas, culturales y tecnológicas",
-            image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            image: "https://media.master2000.net/fotos/300//22643TORNEO%2017.jpg"
           }
         ].map((feature, index) => (
           <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -49,7 +47,6 @@ export default function Home() {
         ))}
       </div>
 
-      {/* CTA Section */}
       <div className="bg-blue-600 rounded-lg shadow-xl p-8 text-center">
         <h2 className="text-2xl font-bold text-white mb-4">
           ¿Listo para ser parte de nuestra comunidad?

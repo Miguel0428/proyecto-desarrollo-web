@@ -14,11 +14,10 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Building2 className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">Institución</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">I.E MANUEL JOSE GOMEZ SERNA</span>
             </Link>
           </div>
 
-          {/* Desktop Menu */}
           <div className="hidden sm:flex sm:items-center sm:space-x-8">
             <Link to="/" className="text-gray-700 hover:text-blue-600">Inicio</Link>
             <Link to="/news" className="text-gray-700 hover:text-blue-600">Noticias y Eventos</Link>
@@ -42,7 +41,7 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Mobile menu button */}
+        
           <div className="sm:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -54,7 +53,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="sm:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
