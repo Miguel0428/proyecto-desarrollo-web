@@ -16,7 +16,6 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// Simulated user storage
 const users: User[] = [];
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -24,7 +23,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const navigate = useNavigate();
 
   const login = (credentials: { email: string; password: string }) => {
-    // Simulate API call
     const foundUser = users.find(u => u.email === credentials.email);
     if (foundUser) {
       setUser(foundUser);
@@ -35,7 +33,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const register = (data: { name: string; email: string; password: string }) => {
-    // Simulate API call
     const newUser = {
       id: Math.random().toString(36).substr(2, 9),
       name: data.name,

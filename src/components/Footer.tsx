@@ -41,7 +41,7 @@ export default function Footer() {
         
         <div className="mt-8 pt-8 border-t border-blue-800">
           <p className="text-center text-sm text-blue-100">
-            © {new Date().getFullYear()} Instituto Moderno. Todos los derechos reservados.
+            © {new Date().getFullYear()} Institucion educativa Manuel Jose Gomez Serna. Todos los derechos reservados.
           </p>
         </div>
       </div>

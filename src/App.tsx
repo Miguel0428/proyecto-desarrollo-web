@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import News from './pages/News';
 import Auth from './pages/Auth';
 import { useAuth } from './context/AuthContext';
+import Footer from './components/Footer';
 
 function App() {
   const { user } = useAuth();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/auth" element={<Auth />} />
         </Routes>
       </main>
+      <Footer/>
     </div>
   );
 }
